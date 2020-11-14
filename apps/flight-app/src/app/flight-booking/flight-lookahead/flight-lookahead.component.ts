@@ -133,7 +133,7 @@ export class FlightLookaheadComponent implements OnInit, OnDestroy {
         );
 
         const input$ = this.control.valueChanges.pipe(
-            filter(v => v.length >= 3),
+            filter(v => v.length >= 1),
             debounceTime(300),
         )
 
